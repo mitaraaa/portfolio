@@ -1,0 +1,14 @@
+@use "./assets/font/stylesheet.css";
+
+* {
+    font-family: "GT Walsheim Pro" !important;
+}
+
+body {
+    margin: 0;
+}
+
+:root {
+    color-scheme: dark;
+    background-color: #1D1D1F;
+}

@@ -1,0 +1,114 @@
+.profile {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 470px;
+    width: 100%;
+
+    padding: 16px 32px;
+    gap: 16px;
+
+    background-color: #FFFFFF1A;
+
+    border: 0px;
+    border-radius: 16px;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        padding: 0px;
+        gap: 16px;
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 2px;
+
+            h1 {
+                font-size: 24px;
+                font-weight: bold;
+
+                margin: 0;
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        .socials {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            padding: 0px;
+            gap: 16px;
+
+            .profile-link {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                gap: 8px;
+
+                color: white;
+                text-decoration: none;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+
+                opacity: 0.4;
+                transition: 200ms ease-out;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+
+    .profile-picture {
+        box-sizing: border-box;
+
+        width: 72px;
+        height: 72px;
+
+        border: 2px white solid;
+        border-radius: 72px;
+    }
+
+    @media screen and (max-width: 460px) {
+        width: fit-content;
+        border-radius: 32px;
+
+        section header h1 {
+            font-size: 16px;
+        }
+
+        section header span {
+            font-size: 12px;
+        }
+
+        section .socials {
+            display: none;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+}

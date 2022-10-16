@@ -1,7 +1,7 @@
 import os
 from flask import Flask, current_app, send_from_directory
 
-app = Flask(__name__, static_folder="dist", static_url_path="/dist")
+app = Flask(__name__, static_folder="../dist", static_url_path="/dist")
 
 
 @app.route("/")
@@ -16,7 +16,7 @@ def portfolio():
 
 @app.route("/<path:path>")
 def send_static(path):
-    return send_from_directory("dist", path)
+    return send_from_directory("../dist", path)
 
 
 if __name__ == "__main__":

@@ -336,9 +336,15 @@ article {
         width: 100%;
 
         h3 {
+            cursor: pointer;
             font-weight: 400;
-
             margin: 0;
+
+            transition: 200ms ease-out;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         .status {
@@ -387,7 +393,7 @@ article {
 
             padding: 4px 8px;
 
-            cursor: default;
+            cursor: pointer;
 
             &:hover {
                 opacity: 1;

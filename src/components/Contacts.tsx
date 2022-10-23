@@ -9,7 +9,7 @@ import { FC } from "react";
     
 const Contacts: FC<DelayProp> = ({ delay }) => {
     return <Article delay={delay} style={{ "width": "100%" }}>
-        <h2>Interested? Contant me!</h2>
+        <h2>Interested? Contact me!</h2>
         <div className="socials">
             <a href="https://github.com/mitaraaa">
                 <img src={githubIcon}></img>
